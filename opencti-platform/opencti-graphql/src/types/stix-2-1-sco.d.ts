@@ -516,6 +516,8 @@ export interface StixUserAccount extends StixCyberObject {
   credential_last_changed: StixDate; // optional
   account_first_login: StixDate; // optional
   account_last_login: StixDate; // optional
+  has_login: boolean; // optional
+  has_password: boolean; // optional
   extensions: {
     [STIX_EXT_OCTI]: StixOpenctiExtension
     [STIX_EXT_OCTI_SCO]?: CyberObjectExtension

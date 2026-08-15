@@ -141,6 +141,8 @@ const booleanAttributes = [
   'can_escalate_privs',
   'aslr_enabled',
   'dep_enabled',
+  'has_login',
+  'has_password',
 ];
 
 const multipleAttributes = [

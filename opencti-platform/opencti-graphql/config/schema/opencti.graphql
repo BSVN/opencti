@@ -10711,6 +10711,8 @@ type UserAccount implements BasicObject & StixObject & StixCoreObject & StixCybe
   credential_last_changed: DateTime
   account_first_login: DateTime
   account_last_login: DateTime
+  has_login: Boolean
+  has_password: Boolean
   # Technical
   creators: [Creator!]
   toStix(version: Version): String
@@ -10751,6 +10753,8 @@ input UserAccountAddInput {
   credential_last_changed: DateTime
   account_first_login: DateTime
   account_last_login: DateTime
+  has_login: Boolean
+  has_password: Boolean
   file: Upload
 }
 type WindowsRegistryKey implements BasicObject & StixObject & StixCoreObject & StixCyberObservable {

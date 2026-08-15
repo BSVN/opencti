@@ -1133,6 +1133,8 @@ const convertUserAccountToStix = (instance: StoreCyberObservable, type: string):
     credential_last_changed: convertToStixDate(instance.credential_last_changed),
     account_first_login: convertToStixDate(instance.account_first_login),
     account_last_login: convertToStixDate(instance.account_last_login),
+    has_login: instance.has_login,
+    has_password: instance.has_password,
   };
 };
 const convertWindowsRegistryKeyToStix = (instance: StoreCyberObservable, type: string): SCO.StixWindowsRegistryKey => {

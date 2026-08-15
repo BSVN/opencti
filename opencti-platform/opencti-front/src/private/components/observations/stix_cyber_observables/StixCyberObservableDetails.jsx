@@ -459,6 +459,8 @@ const StixCyberObservableDetails = createFragmentContainer(
                 credential_last_changed
                 account_first_login
                 account_last_login
+                has_login
+                has_password
             }
             ... on WindowsRegistryKey {
                 attribute_key
